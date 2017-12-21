@@ -191,7 +191,7 @@ body {
 .about{
 	display: flex;
 	flex-direction: row;
-	width: 1290px;
+	max-width: 1290px;
 	margin: 30px auto;
 	font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -218,7 +218,7 @@ body {
 }
 @media(max-width: 1320px){
 	.about{
-		width: 790px;
+		max-width: 790px;
 	}
 	.about-right{
 		display: none;

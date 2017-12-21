@@ -20,10 +20,10 @@ class TopNav extends Component {
 			<div>
 				<nav className="main-navigation box box-horizontal box-nowarp">
 					<div className="box box-horizontal box-nowarp">
-						<a href="/" className="logo"><img src={require("../img/wesco-logo.png")} alt="" /></a>
+						<a href="#/" className="logo"><img src={require("../img/wesco-logo.png")} alt="" /></a>
 						<ul className="navigation">
 							<li className="">
-								<a href="/" className="">首页</a>   
+								<a href="#/" className="">首页</a>   
 							</li>
 							<li className="navigation-item">
 								<a href="/about/" className="">关于我们</a>
