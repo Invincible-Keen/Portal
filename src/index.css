@@ -199,6 +199,9 @@ body {
 .about-left{
 	width: 790px;
 }
+.about-left img{
+	width: 100%;
+}
 .about-left p{
 	padding: 10px 20px 10px 0;
 	line-height: 26px;
@@ -222,6 +225,12 @@ body {
 	}
 	.about-right{
 		display: none;
+	}
+}
+@media(max-width: 850px){
+	.about-left p{
+		padding: 10px 20px 10px 10px;
+		line-height: 24px;
 	}
 }
 
