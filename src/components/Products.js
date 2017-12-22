@@ -4,7 +4,7 @@ import Background from '../img/prodbg.jpg';
 
 const Product = () => (
 	<div className="product">
-		<a href="/"><img src={require("../img/prod.jpg")} alt=""></img><p>水系列阀门</p></a>
+		<a href="#/"><img src={require("../img/prod.jpg")} alt=""></img><p>水系列阀门</p></a>
 	</div>
 );
 

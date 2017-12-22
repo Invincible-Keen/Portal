@@ -6,7 +6,7 @@ const CaseItem = () => (
 		<div className="case-item-desc">
         	<h3>医院学校项目</h3>
         	<p>西安建筑科技大学、浙江温州心血管医院、福建福州省立医院、上海长海医院、上海长征医院、北京海军医...</p>
-        	<a href="/">了解详情&gt;</a>
+        	<a href="#/">了解详情&gt;</a>
       	</div>
 
       	<div className="case-item-img">
@@ -23,7 +23,7 @@ const CaseItemReverse = () => (
 		<div className="case-item-desc">
         	<h3>医院学校项目</h3>
         	<p>西安建筑科技大学、浙江温州心血管医院、福建福州省立医院、上海长海医院、上海长征医院、北京海军医...</p>
-        	<a href="/">了解详情&gt;</a>
+        	<a href="#/">了解详情&gt;</a>
       	</div>
 	</div>
 );
