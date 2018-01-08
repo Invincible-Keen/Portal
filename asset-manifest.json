@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.be43f944.css",
-  "main.css.map": "static/css/main.be43f944.css.map",
-  "main.js": "static/js/main.391f6942.js",
-  "main.js.map": "static/js/main.391f6942.js.map",
+  "main.css": "static/css/main.b2eb85e2.css",
+  "main.css.map": "static/css/main.b2eb85e2.css.map",
+  "main.js": "static/js/main.22516672.js",
+  "main.js.map": "static/js/main.22516672.js.map",
+  "static\\media\\OWM-logo.png": "static/media/OWM-logo.c5a0618e.png",
   "static\\media\\about.jpg": "static/media/about.29993e1f.jpg",
   "static\\media\\about4.jpg": "static/media/about4.cf5be233.jpg",
   "static\\media\\boundary.png": "static/media/boundary.ab69257a.png",
@@ -16,6 +17,7 @@
   "static\\media\\prod.jpg": "static/media/prod.e43c2672.jpg",
   "static\\media\\prodbg.jpg": "static/media/prodbg.83ad6004.jpg",
   "static\\media\\timg.jpg": "static/media/timg.abafe8ea.jpg",
-  "static\\media\\timthumb.jpg": "static/media/timthumb.8dea7fbd.jpg",
-  "static\\media\\wesco-logo.png": "static/media/wesco-logo.7888d15c.png"
+  "static\\media\\timg1.jpg": "static/media/timg1.fe56fb46.jpg",
+  "static\\media\\timg2.jpg": "static/media/timg2.0ddd1219.jpg",
+  "static\\media\\timthumb.jpg": "static/media/timthumb.8dea7fbd.jpg"
 }

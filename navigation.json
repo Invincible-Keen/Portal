@@ -1,0 +1,118 @@
+
+{
+    "items" : [
+        {
+            "id" : 1,
+            "name" : "首页",
+            "eName" : "Home",
+            "url" : "#/",
+            "subItems" : null
+        },
+        {
+            "id" : 2,
+            "name" : "关于我们",
+            "eName" : "About",
+            "url" : "#/",
+            "subItems" : [
+                {
+                    "id" : 1,
+                    "name" : "公司简介",
+                    "eName" : "Profile",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 2,
+                    "name" : "企业文化",
+                    "eName" : "Enterprise Culture",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 3,
+                    "name" : "组织机构",
+                    "eName" : "Organization",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 4,
+                    "name" : "荣誉证书",
+                    "eName" : "Certificate",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 5,
+                    "name" : "资料下载",
+                    "eName" : "Download",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 6,
+                    "name" : "生产环境",
+                    "eName" : "Environment",
+                    "url" : "#/"
+                }
+            ]
+        },
+        {
+            "id" : 3,
+            "name" : "公司新闻",
+            "eName" : "News",
+            "url" : "#/",
+            "subItems" : [
+                {
+                    "id" : 1,
+                    "name" : "企业新闻",
+                    "eName" : "Corporate news",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 2,
+                    "name" : "行业动态",
+                    "eName" : "Industry dynamic",
+                    "url" : "#/"
+                },
+                {
+                    "id" : 3,
+                    "name" : "企业责任",
+                    "eName" : "Corporate responsibility",
+                    "url" : "#/"
+                }
+            ]
+        },
+        {
+            "id" : 4,
+            "name" : "产品展示",
+            "eName" : "Products",
+            "url" : "#/",
+            "subItems" : null
+        },
+        {
+            "id" : 5,
+            "name" : "客户服务",
+            "eName" : "Services",
+            "url" : "#/",
+            "subItems" : null
+        },
+        {
+            "id" : 6,
+            "name" : "招贤纳士",
+            "eName" : "Join us",
+            "url" : "#/",
+            "subItems" : null
+        },
+        {
+            "id" : 7,
+            "name" : "案例展示",
+            "eName" : "Case",
+            "url" : "#/",
+            "subItems" : null
+        },
+        {
+            "id" : 8,
+            "name" : "联系我们",
+            "eName" : "Contact",
+            "url" : "#/",
+            "subItems" : null
+        }
+    ]
+
+}
