@@ -17,7 +17,7 @@ const NewsListItem = () => (
 
 
 const NewsList = () => (
-	<div className="block-content">
+	<div className="block-content news-list">
       	<NewsListItem />
       	<NewsListItem />
       	<NewsListItem />

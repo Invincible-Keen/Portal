@@ -8,8 +8,9 @@ const Product = () => (
 	</div>
 );
 
+/*style={{'backgroundImage': `url(${Background})`}}*/
 const Products = () => (
-	<div className="block-content" style={{'backgroundImage': `url(${Background})`}}>		
+	<div className="block-content" style={{'background-color': '#f8fcff'}}>	
 		<div className="products">
 			<SubTitle title="产品中心" subTitle="PRODUCTS" />
 	      	<div className="products-items">
