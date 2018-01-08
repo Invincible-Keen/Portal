@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import NavigationItem from '../components/NavigationItem'
 import NavigationMobileItem from '../components/NavigationMobileItem'
+import navigation from '../dummy_data/navigation.json'
+
 
 class Navigation extends Component {
 
@@ -29,6 +31,7 @@ class Navigation extends Component {
 	}
 
 	componentWillMount() {
+		// console.log(navigation);
 		let isEng = false;
 		if(localStorage.getItem("isEnglish") === "true"){
 			isEng = true;
@@ -41,15 +44,17 @@ class Navigation extends Component {
 	}
 
 	_getNavigation(){
-		axios.get('../navigation.json').then((res)=>{
-            // console.log(res.data);
-            this.setState({
-            	navigationItems: res.data.items
-            });
-        }).catch((err)=>{
-            console.log(err.status);
-        })
-
+		// axios.get('../navigation.json').then((res)=>{
+  //           // console.log(res.data);
+  //           this.setState({
+  //           	navigationItems: res.data.items
+  //           });
+  //       }).catch((err)=>{
+  //           console.log(err.status);
+  //       })
+  		this.setState({
+        	navigationItems: navigation.items
+        });
 	}
 
 

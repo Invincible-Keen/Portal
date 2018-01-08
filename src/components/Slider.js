@@ -27,10 +27,10 @@ class Slider extends Component {
 				<div className="slider-item" style={{'display': this.state.activeItem === 2? 'block' : 'none'}}>
 					<img className="bigImg2" src={require("../img/timg2.jpg")} alt="" />
 				</div>
-				<div class="slider-pagination">
-					<span data-slide-to="0" class={this.state.activeItem === 0? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
-					<span data-slide-to="1" class={this.state.activeItem === 1? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
-					<span data-slide-to="2" class={this.state.activeItem === 2? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
+				<div className="slider-pagination">
+					<span data-slide-to="0" className={this.state.activeItem === 0? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
+					<span data-slide-to="1" className={this.state.activeItem === 1? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
+					<span data-slide-to="2" className={this.state.activeItem === 2? "active" : ""} onClick={this.handleIndicatorClick.bind(this)}></span>
 				</div>
 			</div>
 		)
