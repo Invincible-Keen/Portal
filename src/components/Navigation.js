@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import PropTypes from 'prop-types'
+// import axios from 'axios';
 import NavigationItem from '../components/NavigationItem'
 import NavigationMobileItem from '../components/NavigationMobileItem'
+import NavigationMobileMenu from '../components/NavigationMobileMenu'
 import navigation from '../dummy_data/navigation.json'
+
 
 
 class Navigation extends Component {
 
+	static propTypes = {
+		showMobileMenu: PropTypes.bool.isRequired,
+		handleShowHideMobileMenu: PropTypes.func
+	}
+
+
 	constructor () {
 		super()
 		this.state = {
-			showMobileMenu: false,
 			isEnglish: false,
 			navigationItems: []
 		}
 	}
 
 	handleShowHideMobileMenu(){
-		this.setState({
-	      showMobileMenu: !this.state.showMobileMenu
-	    });
+		if(this.props.handleShowHideMobileMenu){
+			this.props.handleShowHideMobileMenu();
+		}
 	}
 
 	switchLanguage(){
@@ -31,7 +39,9 @@ class Navigation extends Component {
 	}
 
 	componentWillMount() {
-		// console.log(navigation);
+		console.log(navigation);
+
+
 		let isEng = false;
 		if(localStorage.getItem("isEnglish") === "true"){
 			isEng = true;
@@ -63,7 +73,7 @@ class Navigation extends Component {
 			<div>
 				<nav className="main-navigation box box-horizontal box-nowarp">
 					<div className="box box-horizontal box-nowarp">
-						<a href="#/" className="logo"><img src={require("../img/OWM-logo.png")} alt="" /></a>
+						<a href="#/" className="logo"><img src={require("../img/LOGO.png")} alt="" /></a>
 						<ul className="navigation">
 							{
 								this.state.navigationItems.map((n, i) => {
@@ -72,14 +82,14 @@ class Navigation extends Component {
 							}
 						</ul>
 					</div>
-					<a className="language" href="#" onClick={this.switchLanguage.bind(this)}><span>{this.state.isEnglish? "中文" : "English"}</span></a>
+					<a className="language" onClick={this.switchLanguage.bind(this)}><span>{this.state.isEnglish? "中文" : "English"}</span></a>
 					<span className="navigation-folded" onClick={this.handleShowHideMobileMenu.bind(this)}><i className="fa fa-bars" aria-hidden="true"></i></span>
 				</nav>
-				<div className="mobile-menu" style={{'transform': this.state.showMobileMenu? 'translate(200px, 0)' : 'translate(0, 0)'}}>
+				<div className="mobile-menu" style={{'transform': this.props.showMobileMenu? 'translate(250px, 0)' : 'translate(0, 0)'}}>
 					<ul className="mobile-navigation">
 						{
 							this.state.navigationItems.map((n, i) => {
-								return(<NavigationMobileItem key={i} item={n} isEnglish={this.state.isEnglish} />);
+								return(<NavigationMobileMenu key={i} item={n} isEnglish={this.state.isEnglish} />);
 							})
 						}
 					</ul>

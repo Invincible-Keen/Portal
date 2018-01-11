@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SubTitle from '../components/SubTitle'
-import Background from '../img/prodbg.jpg';
+// import Background from '../img/prodbg.jpg';
 
 const Product = () => (
 	<div className="product">

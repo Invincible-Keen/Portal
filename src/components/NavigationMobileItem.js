@@ -34,7 +34,7 @@ class NavigationMobileItem extends Component {
 			<li className="mobile-navigation-item">
 				<a href={ this.props.item.url } className="mobile-navigation" onClick={this.handleShowHideSubItems.bind(this)}>
 					{ this.props.isEnglish? this.props.item.eName : this.props.item.name }
-					{ this.props.item.subItems != null && <i className="fa fa-angle-down" aria-hidden="true"></i> }
+					{ this.props.item.subItems != null && <i className={ this.state.showItems? "fa fa-angle-left" : "fa fa-angle-down" } aria-hidden="true"></i> }
 				</a>
 				{
 					this.props.item.subItems != null &&
