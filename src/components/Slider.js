@@ -36,8 +36,10 @@ class Slider extends Component {
 		document.querySelectorAll(".slider-item").forEach((item) => item.style.visibility = "hidden")
 		document.querySelectorAll(".slider-item").forEach((item) => item.style.opacity  = "0.1")
 
-		document.querySelector(".slider div.active").style.visibility = "visible";
-		document.querySelector(".slider div.active").style.opacity = "1";
+		if(document.querySelector(".slider div.active") != null){
+			document.querySelector(".slider div.active").style.visibility = "visible";
+			document.querySelector(".slider div.active").style.opacity = "1";
+		}
 	}
 
 	playNextImg(){

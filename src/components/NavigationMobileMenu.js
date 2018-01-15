@@ -9,7 +9,7 @@ function handleClick(e){
 }
 
 const NavigationMobileMenu = ({item, isEnglish}) => (
-	<Menu onClick={handleClick} style={{ width: 256 }} defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline">
+	<Menu onClick={handleClick} style={{ width: 250 }} defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline">
 		{
 			item.subItems != null &&
 				<SubMenu title={<span><Icon type="home" /><a href={item.url}>{ isEnglish? item.eName : item.name }</a></span>}>

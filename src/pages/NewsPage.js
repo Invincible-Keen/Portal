@@ -7,10 +7,32 @@ import Footer from '../components/Footer'
 
 
 class NewsPage extends Component {
+
+	constructor () {
+		super()
+		this.state = {
+			showMobileMenu: false
+		}
+	}
+
+	handleShowHideMobileMenu(){
+		this.setState({
+	      showMobileMenu: !this.state.showMobileMenu
+	    });
+	}
+
+	handleScreenClick(event){
+		if(event.target.tagName !== "A" && event.target.className !== "fa fa-bars" && event.target.className !== "navigation-folded" && event.target.offsetParent.className.indexOf("mobile") < 0){
+			this.setState({
+		      showMobileMenu: false
+		    });
+		}
+	}
+
 	render() {
 		return(
-			<div>
-				<Navigation />
+			<div onClick={this.handleScreenClick.bind(this)}>
+				<Navigation showMobileMenu={ this.state.showMobileMenu } handleShowHideMobileMenu={ this.handleShowHideMobileMenu.bind(this)}/>
 				<div className="banner"><img src={require("../img/news.jpg")} alt="" /></div>
 				<div className="content-container">
 					<Breadcrumb />

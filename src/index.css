@@ -63,8 +63,17 @@ body {
 .logo{
 	margin: 5px 0;
 	height: 50px;
+	display: block;
+}
+.logo-small{
+	margin: 5px 0;
+	height: 50px;
+	display: none;
 }
 .logo img{
+	height: 100%;
+}
+.logo-small img{
 	height: 100%;
 }
 .language{
@@ -221,6 +230,14 @@ ul.navigation{
 	}
 	.mobile-menu{
 		display: block;
+	}
+}
+@media(max-width: 768px){
+	.logo-small{
+		display: block;
+	}
+	.logo{
+		display: none;
 	}
 }
 
@@ -780,3 +797,39 @@ ul.navigation{
 
 
 
+/*Admin pages*/
+/*Login page*/
+.login .login-form {
+  max-width: 400px;
+}
+.login .login-form-forgot {
+  float: right;
+}
+.login .login-form-button {
+  width: 100%;
+}
+
+/*Admin page*/
+.admin-logo{
+	height: 32px;
+	background: rgba(255,255,255,.2);
+	margin: 16px;
+}
+
+/*Image upload*/
+.ant-upload-select-picture-card i {
+  font-size: 32px;
+  color: #999;
+}
+.ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+.ant-upload-list-picture-card div.ant-upload-list-item{
+  width: 480px;
+  height: 270px;
+}
+div.ant-upload.ant-upload-select-picture-card{
+  width: 480px;
+  height: 270px;
+}

@@ -73,7 +73,8 @@ class Navigation extends Component {
 			<div>
 				<nav className="main-navigation box box-horizontal box-nowarp">
 					<div className="box box-horizontal box-nowarp">
-						<a href="#/" className="logo"><img src={require("../img/LOGO.png")} alt="" /></a>
+						<a href="#/login" className="logo"><img src={require("../img/LOGO.png")} alt="" /></a>
+						<a href="#/login" className="logo-small"><img src={require("../img/LOGO-mobile.jpg")} alt="" /></a>
 						<ul className="navigation">
 							{
 								this.state.navigationItems.map((n, i) => {
