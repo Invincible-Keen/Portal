@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "integrate": "xcopy .\\build C:\\Users\\kguo018\\source\\repos\\OWM\\OceanWillMarine\\Portal /S/Y",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

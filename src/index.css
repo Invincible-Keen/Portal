@@ -799,8 +799,33 @@ ul.navigation{
 
 /*Admin pages*/
 /*Login page*/
+.login{
+
+}
+.login-header{
+	height: 63px;
+    flex: 0 0 58px;
+    /*background: #fff;*/
+    background: #01294C;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
 .login .login-form {
   max-width: 400px;
+  height: 666px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-form-title{
+	text-align: center;
+	font-size: 32px;
 }
 .login .login-form-forgot {
   float: right;
@@ -814,6 +839,10 @@ ul.navigation{
 	height: 32px;
 	background: rgba(255,255,255,.2);
 	margin: 16px;
+}
+
+a.nav-text{
+	display: inline-flex;
 }
 
 /*Image upload*/
