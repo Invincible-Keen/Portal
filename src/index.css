@@ -675,7 +675,6 @@ ul.navigation{
 }
 .btn{
 	background-color: #5bc0de;
-	background-color: white;
 	border-radius: 5px;
 	width: 100%;
 }
@@ -854,11 +853,74 @@ a.nav-text{
   margin-top: 8px;
   color: #666;
 }
-.ant-upload-list-picture-card div.ant-upload-list-item{
+.home-image .ant-upload-list-picture-card div.ant-upload-list-item{
   width: 480px;
   height: 270px;
 }
-div.ant-upload.ant-upload-select-picture-card{
+.home-image div.ant-upload.ant-upload-select-picture-card{
   width: 480px;
   height: 270px;
+}
+
+/*About setting form*/
+.about-setting{
+	display: flex;
+	flex-direction: row;
+	width: 1250px;
+	margin: 30px auto;
+	font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+.about-setting-operation{
+	margin: 30px auto;
+	width: 1250px;
+}
+.about-setting-operation .ant-btn{
+	float: left;
+}
+.about-setting-left{
+	width: 790px;
+}
+.about-setting-left textarea{
+	width: 790px;
+	height: 230px;
+}
+.about-setting-right{
+	width: 460px;
+	display: flex;
+	flex-direction: row;
+}
+.about-setting-right-item{
+	width: 50%;
+}
+
+.about-setting-left .ant-upload-list-picture-card div.ant-upload-list-item{
+	width: 790px;
+  	height: 230px;
+}
+.about-setting-left div.ant-upload.ant-upload-select-picture-card{
+  	width: 790px;
+  	height: 230px;
+}
+
+.about-setting-right .ant-upload-list-picture-card div.ant-upload-list-item{
+	width: 230px;
+  	height: 230px;
+}
+.about-setting-right div.ant-upload.ant-upload-select-picture-card{
+  	width: 230px;
+  	height: 230px;
+}
+/*.about-setting-right .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img{
+  	width: 230px;
+  	height: 230px;
+}*/
+
+
+/*Footer setting form*/
+.footer-setting-form{
+	width: 888px;
+	margin: 30px auto;
+	background-color: #f0f2f5;
+	padding: 20px;
 }

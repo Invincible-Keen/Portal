@@ -122,8 +122,8 @@ class HomeImageForm extends Component {
 								)
 							}
 				        </FormItem>
-				        <FormItem label="Home Image(1920*1080)">
-				          	<PicturesWall width={960} fileList={this.state.fileList} handleImageChange={this.handleImageChange}/>
+				        <FormItem label="Home Image(1920*1080)" className="home-image">
+				          	<PicturesWall previewWidth={960} fileList={this.state.fileList} uploadAction="/api/ImageUpload" handleImageChange={this.handleImageChange}/>
 				        </FormItem>
 				        <Row>
 				        	<Col span={12} style={{ textAlign: 'left' }}>

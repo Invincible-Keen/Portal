@@ -4,14 +4,15 @@ import { Upload, Icon, Modal } from 'antd';
 
 class PicturesWall extends React.Component {
   static propTypes = {
-    width: PropTypes.number,
+    previewWidth: PropTypes.number,
     maxImgNumber: PropTypes.number,
     fileList: PropTypes.array,
+    uploadAction: PropTypes.string.isRequired,
     handleImageChange: PropTypes.func
   }
 
   static defaultProps = {
-    width: 520,
+    previewWidth: 520,
     maxImgNumber: 1,
     fileList: []
   }
@@ -52,7 +53,7 @@ class PicturesWall extends React.Component {
     return (
       <div className="clearfix">
         <Upload
-          action="/api/Navigation"
+          action={this.props.uploadAction}
           listType="picture-card"
           fileList={this.props.fileList}
           onPreview={this.handlePreview}
@@ -60,7 +61,7 @@ class PicturesWall extends React.Component {
         >
           {this.props.fileList.length >= this.props.maxImgNumber ? null : uploadButton}
         </Upload>
-        <Modal width={this.props.width} visible={previewVisible} footer={null} onCancel={this.handleCancel}>
+        <Modal width={this.props.previewWidth} visible={previewVisible} footer={null} onCancel={this.handleCancel}>
           <img alt="example" style={{ width: '100%' }} src={previewImage} />
         </Modal>
       </div>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'antd';
-import AdminLayout from '../../layouts/AdminLayout'
-// import ModalForm from '../components/admin/ModalForm'
 import HomeImageForm from './HomeImageForm'
 
 

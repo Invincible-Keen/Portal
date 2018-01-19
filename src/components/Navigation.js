@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 // import axios from 'axios';
 import NavigationItem from '../components/NavigationItem'
-import NavigationMobileItem from '../components/NavigationMobileItem'
+// import NavigationMobileItem from '../components/NavigationMobileItem'
 import NavigationMobileMenu from '../components/NavigationMobileMenu'
 import navigation from '../dummy_data/navigation.json'
 
